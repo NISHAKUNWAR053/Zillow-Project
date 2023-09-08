@@ -18,16 +18,22 @@ This attempt seeks to predict housing prices using Zillow's dataset. The ultimat
 3. Is having 1 bathroom worse for property value than having 2 bedrooms?
 
 # Data Dictionary 👩‍💻
-|Variable	| Data Type|	Description	Unit|
-Bedroom	Integer	Number of bedroom in home	Count
-Bathroom	Float	Number of bathrrom in home including fractional bathroom	Count
-Square Feet	Float number	The total square footage of the property	Square feet
-Lotsize	Integer	The size of the land on which the property is built	Square feet
-Age	Integer	The age of the property calculate from the year it was built to the current year	Years
-Assesses Value	Float	The value of the property as assessed for tax purposes	Currency(USD)
-TaxAmount	Float	the total annual property tax amount	currency(USD)
-County	String	the county where the property is located	Text
-Latitude	Float	Indicating north-south position on earth's surface	Degrees(Decimal)
-Longitude	Float	Indicating east-west position on earth's surface	Degrees(Decimal)
+| Variable    | Data Type |  Description    | Unit|
+| --------  | -------  |  ------- |-------|
+| Bedroom | Integer | Number of bedroom in home| Count|
+| Bathroom| Float | Number of bathrrom in home including fractional bathroom| Count|
+|Square Feet| Float number| The total square footage of the property| Square feet|
+| Lotsize| Integer| The size of the land on which the property is built| Square feet|
+| Age| Integer| The age of the property calculate from the year it was built to the current year| Years|
+| Assesses Value| Float| The value of the property as assessed for tax purposes| Currency(USD)
+| TaxAmount| Float| the total annual property tax amount| currency(USD)
+| County| String| the county where the property is located| Text| Text|
+| Latitude| Float| Indicating north-south position on earth's surface| Degrees(Decimal)|
+| Longitude| Float| Indicating east-west position on earth's surface| Degrees(Decimal)|
 
+
+# Project Plan
+Data Acquisition
+- Gather data from mySQL database
+- 
 
