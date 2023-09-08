@@ -32,8 +32,20 @@ This attempt seeks to predict housing prices using Zillow's dataset. The ultimat
 | Longitude| Float| Indicating east-west position on earth's surface| Degrees(Decimal)|
 
 
+
 # Project Plan
 Data Acquisition
 - Gather data from mySQL database
-- 
+
+Data Preparation
+- Data cleaning
+- Data splitting
+
+Exploratory Analysis
+- Pose inquiries to identify the pivotal attributes linked to the property's assessed valuation.
+- Investigate the correlation between each feature and the assessed property value.
+- Employ visual aids to gain a nuanced understanding of the relationships between various attributes.
+
+Statistical Testing and Modeling
+
 
