@@ -46,6 +46,27 @@ Exploratory Analysis
 - Investigate the correlation between each feature and the assessed property value.
 - Employ visual aids to gain a nuanced understanding of the relationships between various attributes.
 
-Statistical Testing and Modeling
 
+Modeling Evaluation
 
+- Train and evaluate various model like Linear Regression, Selection Operato(LASSO), Least Angle Regression (LARS), Ordinary Least Squares (OLS) utilizing Random seed value of 123 and alpha = 0.5.
+- Train the models using the available data.
+- Validate the models to assess their performance.
+- Select the most effective model fro further testing.
+
+Product Delivery
+
+- Prepare the final notebook that integrates the best models, visuals and applicable data to present comprehensive insights.
+
+Steps to reproduce
+
+- Read this README.md documents to familiarize yourself with the project details and key findings.
+- You have to have access to data I used MYSQL server but data are also availabele in Kaggle (data science and AI platform)
+- Confirm .gitignore to hide your important file that you wish not to get public.
+- Libraries used are pandas, matplotlib, seaborn, plotly, sklearn, scipy.
+- Ensure that all necessary libraries or dependent programs are installed. You may need to install additional package it they are not already presnt in your environment.
+- Run the final_report.ipynb notebook to execute te project code and generate the results.
+
+Key Findings, Recommendations and Takeaways:
+
+- 
