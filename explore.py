@@ -231,11 +231,6 @@ def pairplot(train):
     plt.title('Pairplot of Zillow features')
     plt.show()
     
-def heatmap(train):
-    #Visualizing correlation data with Heat Map
-    plt.figure(figsize=(25,20))
-    sns.heatmap(train.corr(), cmap='browns', center=0, annot=True)
-    plt.show()
     
 #random sample of 3017 which is apprx 10% of training data 
 def plot_variable_pairs(train):
@@ -362,7 +357,7 @@ def ols_lasso_tweedie(X_train, X_validate, y_train, y_validate, metric_df):
     rmse_validate_ols = mean_squared_error(y_validate.tax_value, y_validate.tax_value_pred_ols) ** .5
 
     #append metric
-    metric_df = metric_df.append({
+    metric_df = metric_df.concat({
         'model': 'ols',
         'RMSE_train': rmse_train_ols,
         'RMSE_validate': rmse_validate_ols,
@@ -393,7 +388,7 @@ def ols_lasso_tweedie(X_train, X_validate, y_train, y_validate, metric_df):
     rmse_validate_lars = mean_squared_error(y_validate.tax_value, y_validate.tax_value_pred_lars) ** .5
 
     #append metric
-    metric_df = metric_df.append({
+    metric_df = metric_df.concat({
         'model': 'lasso_alpha0.03',
         'RMSE_train': rmse_train_lars,
         'RMSE_validate': rmse_validate_lars,
@@ -423,7 +418,7 @@ def ols_lasso_tweedie(X_train, X_validate, y_train, y_validate, metric_df):
     rmse_validate_tweedie = mean_squared_error(y_validate.tax_value, y_validate.tax_value_pred_tweedie) ** .5
 
     # append metric
-    metric_df = metric_df.append({
+    metric_df = metric_df.concat({
         'model': 'tweedie_power1_alpha1.0',
         'RMSE_train': rmse_train_tweedie,
         'RMSE_validate': rmse_validate_tweedie,
